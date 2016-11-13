@@ -127,7 +127,7 @@ function connect (req, opts, fn) {
 
     if (200 == statusCode) {
       // 200 Connected status code!
-      self.emit('proxy connect');
+      self.emit('proxy connect'); //emit event
       var sock = socket;
 
       // nullify the buffered data since we won't be needing it
